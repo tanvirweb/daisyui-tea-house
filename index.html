@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'c-primary': '#1C1C1C',
+                        'c-body': '#777',
+                        'c-g-dark': '#F00',
+                        'c-g-light': '#FF8938'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+<body class="bg-[#F4F4F4]">
+    <!-- Main Banner Section -->
+    <header>
+        <div class="max-w-screen-xl mx-auto px-4 py-20">
+            <div class="flex items-center flex-col lg:flex-row gap-12">
+                <div class="basis-6/12 space-y-5">
+                    <h1 class="text-c-primary text-5xl lg:text-7xl font-extrabold">It's good<br> tea time at The <br>Tea House</h1>
+                    <p class="max-w-sm">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    <a href="#" class="btn bg-gradient-to-r hover:bg-gradient-to-l from-c-g-light to-c-g-dark text-white border-0">Explore More <i class="fa-solid fa-angles-right"></i></a>
+                </div>
+                <div class="basis-6/12">
+                    <img src="images/banner.png" alt="">
+                    <div class="max-w-xs flex bg-white rounded-xl relative -mt-20 p-5 gap-5">
+                        <img class="w-16 object-contain" src="images/star.png" alt="">
+                        <div>
+                            <h3 class="text-c-primary text-4xl font-extrabold">5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Featured Products Section -->
+        <section>
+            <div class="max-w-screen-xl mx-auto text-center px-4">
+                <h2 class="text-4xl text-c-primary">Our Featured Products</h2>
+                <p class="max-w-5xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
